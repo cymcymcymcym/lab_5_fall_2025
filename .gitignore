@@ -30,3 +30,4 @@ Thumbs.db
 # ROS
 *.log
 
+final_checkpoint/
