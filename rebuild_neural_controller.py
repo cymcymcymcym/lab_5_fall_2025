@@ -46,6 +46,11 @@ FILE_MAPPINGS = [
         "description": "Parkour neural network policy file"
     },
     {
+        "source": LAB_DIR / "pure_rl_policy.json",
+        "destination": NEURAL_CONTROLLER_LAUNCH / "pure_rl_policy.json",
+        "description": "Pure RL neural network policy file",
+    },
+    {
         "source": LAB_DIR / "test_policy.json",
         "destination": NEURAL_CONTROLLER_LAUNCH / "test_policy.json",
         "description": "Place Holder test policy file"
