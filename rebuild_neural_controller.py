@@ -24,6 +24,8 @@ LAB_DIR = Path("/home/pi/lab_5_fall_2025")
 NEURAL_CONTROLLER_LAUNCH = Path("/home/pi/pupperv3-monorepo/ros2_ws/src/neural_controller/launch")
 ROS2_WS = Path("/home/pi/pupperv3-monorepo/ros2_ws")
 
+NEURAL_CONTROLLER_SRC = Path("/home/pi/pupperv3-monorepo/ros2_ws/src/neural_controller/src")
+
 FILE_MAPPINGS = [
     {
         "source": LAB_DIR / "config.yaml",
@@ -34,6 +36,11 @@ FILE_MAPPINGS = [
         "source": LAB_DIR / "launch.py",
         "destination": NEURAL_CONTROLLER_LAUNCH / "launch.py",
         "description": "Neural controller launch file"
+    },
+    {
+        "source": LAB_DIR / "neural_controller.cpp",
+        "destination": NEURAL_CONTROLLER_SRC / "neural_controller.cpp",
+        "description": "Neural controller C++ source file"
     },
     {
         "source": LAB_DIR / "estop_controller.cpp",
